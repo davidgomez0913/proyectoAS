@@ -1,14 +1,18 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import UserComponent from './components/user/index'
+import Hooks from './components/user/hooks'
 
 function App() {
+  const name ="David Gomez"
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Hola Mundo (y) <br></br>
+          {name}
         </p>
         <a
           className="App-link"
@@ -19,6 +23,8 @@ function App() {
           Learn React
         </a>
       </header>
+      <UserComponent/>
+      <Hooks/>
     </div>
   );
 }
